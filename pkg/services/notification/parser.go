@@ -33,7 +33,7 @@ func GenNotificationFromReq(req *pb.CreateNfWithAddrsRequest) (*models.Notificat
 }
 
 func GenJobFromNf(nf *models.Notification) (*models.Job, error) {
-	//todo check eamil string
+	//todo check email string
 	emailsArray := strings.Split(nf.AddrsStr, ";")
 	taskcnt := int64(len(emailsArray))
 	job := &models.Job{
