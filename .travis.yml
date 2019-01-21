@@ -13,7 +13,7 @@ deploy:
   script: bash docker_push latest
   on:
     branch: master
-    repo: openpitrix/notification
+    repo: chilianyi/notification
 - provider: script
   script: bash docker_push $TRAVIS_TAG
   on:
